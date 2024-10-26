@@ -8,7 +8,8 @@
 
 OR
 
-`docker pull /crosskicker/frr-image:latest`
+`docker pull crosskicker/frr-image:latest`
+
 
 ## Import in GNS3
 
@@ -24,7 +25,7 @@ Select the right image (frr-image that you downloaded) :
 
 ![Texte alternatif](./images/step4.png)
 
-Select the numbers of network inerfaces : 
+Select the numbers of network inerfaces :
 
 ![Texte alternatif](./images/step5.png)
 
