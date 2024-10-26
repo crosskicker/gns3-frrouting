@@ -1,6 +1,22 @@
+# FRRouting with GNS3
+
+## Overview
+
+In this project you will find a Dockerfile to build a clean frrouting image to use in GNS3, you can directly pull the image from my docker repo. This Dockerfile is espacially for a gns3 use case ! If you want to have image with a clean FRRouting configuration for just a Docker use case ( as in project with Docker compose ) go to my other repository.
+
+It's the latest version of FRRouting, to configure different protocoles you just need to enter in router configuration with "vtysh" command, for the next respect the configuration of FRR.
+
+https://docs.frrouting.org/en/stable-10.1/overview.html
+
+This version of FRRouting doesn't have many .conf file but just a single one "frr.conf"
+
+The router configuration can be saved be saved with "write memory" ( thanks to volumes configure in Dockerfile ) so the memory isn't volatile.
+
 ## Download GNS3
 
 **(Skip this part if you already have GNS3)**
+
+https://www.gns3.com/software/download
 
 ## Generate or Pull the image
 
@@ -9,7 +25,6 @@
 OR
 
 `docker pull crosskicker/frr-image:latest`
-
 
 ## Import in GNS3
 
